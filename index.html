@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>cm to inch 변환</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./만 나이 계산기_files/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-lg">
+            <h1 class="text-center text-2xl font-bold text-purple-600 sm:text-3xl">
+                <p>cm
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    inch 변환 계산기
+                </p> 
+            </h1>
+
+            <p class="mx-auto mt-4 max-w-md text-center text-gray-500 mb-8">
+                간단하게 센티미터를 인치로 변환!
+            </p>
+
+            <div>
+                <label for="input" class="text-sm font-bold">센티미터 값:</label>
+                <div class="calculator-input">
+                    <input placeholder="cm 값을 입력해주세요." name="cm" id="input" type="number" class="w-full rounded-lg border-gray-300 shadow-sm">
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <label for="output" class="text-sm font-bold mt-4 block">결과:</label>
+                <div class="relative mt-1 text-gray-700" id="output">
+                    결과가 여기에 표시됩니다.
+                </div>
+            </div>
+
+            <button id="submit" class="block w-full rounded-lg bg-purple-600 mt-8 px-5 py-3 text-sm font-medium text-white">
+                변환하기
+            </button>
+        </div>
+    </div>
+
+    <script src="./conversion_cal.js"></script>
+
+</body>
+</html>
